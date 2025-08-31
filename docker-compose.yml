@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  app:
+    image: Spring-Boot-Pipeline-SetUp
+    ports:
+      - "8080:8080"
