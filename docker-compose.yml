@@ -4,4 +4,4 @@ services:
   app:
     image: spring-boot-pipeline-setup
     ports:
-      - "8080:8080"
+      - "5173:5173"
