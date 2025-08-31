@@ -64,7 +64,7 @@ pipeline {
         stage('Deploy Using Docker Compose') {
           steps {
               echo "Building Docker image..."
-              sh 'docker build -t spring-boot-pipeline-setup .'
+              sh 'docker build --no-cache -t spring-boot-pipeline-setup .'
 
               echo "Starting app with Docker Compose..."
               sh 'docker-compose up -d'
